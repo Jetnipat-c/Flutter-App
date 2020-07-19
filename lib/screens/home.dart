@@ -43,19 +43,35 @@ class _HomeState extends State<Home> {
   }
 
   Widget medical() {
-    return Container(
-      padding: const EdgeInsets.only(left: 40.0),
-      alignment: Alignment.center,
-      height: 230,
-      decoration: BoxDecoration(border: Border.all()),
-      child: Text(
-        "MEDICAL TERMINOLOGY",
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 35,
-          fontWeight: FontWeight.bold,
+    return Column(
+      children: <Widget>[
+        Container(
+          padding: const EdgeInsets.only(left: 40.0, top: 40.0),
+          alignment: Alignment.center,
+          height: 120,
+          //decoration: BoxDecoration(border: Border.all()),
+          child: Text(
+            "MEDICAL TERMINOLOGY",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 35,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
-      ),
+        Container(
+         //decoration: BoxDecoration(border: Border.all()),
+          margin: const EdgeInsets.only(left: 40.0, right: 40.0),
+          height: 150,
+          child: Text(
+            "รายงานนี้เป็นส่วนหนึ่งของรายวิชา 806-415 ฝึกงาน คณะวิเทศศึกษา สาขาวิชาไทยศึกษา มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต ภาคเรียนที่ 3ปีการศึกษา 2562",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15,
+            ),
+          ),
+        ),
+      ],
     );
   }
 
