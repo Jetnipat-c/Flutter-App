@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         Container(
-         //decoration: BoxDecoration(border: Border.all()),
+          //decoration: BoxDecoration(border: Border.all()),
           margin: const EdgeInsets.only(left: 40.0, right: 40.0),
           height: 150,
           child: Text(
